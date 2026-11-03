@@ -1,0 +1,229 @@
+{
+  "stable_flag_counts": {
+    "0": 1449,
+    "1": 756
+  },
+  "n_fault_counts": {
+    "0": 21,
+    "1": 566,
+    "2": 646,
+    "3": 612,
+    "4": 360
+  },
+  "runs_split_across_A_blocks": 9,
+  "B_purged_per_fold": [
+    20,
+    20,
+    20,
+    21,
+    30
+  ],
+  "A_fold_test_blocks": [
+    [
+      0,
+      9
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "r13_means": {
+    "fold0_prob_top1_acc": 0.9775280898876403,
+    "fold0_priority_top1_acc": 0.9775280898876403,
+    "fold0_macro_f1": 0.961213417371136,
+    "pooled_prob_top1_err": 0.023534798534798562,
+    "pooled_priority_top1_err": 0.05412087912087915,
+    "pooled_bound": 0.02435897435897435,
+    "foldmean_macro_f1": 0.9648383348554432
+  },
+  "fold0_order_pres": {
+    "Local occlusion": {
+      "order_preserving_frac_min": 0.9595505617977528,
+      "order_preserving_frac_mean": 0.971685393258427,
+      "top1_agrees_frac_min": 0.9640449438202248,
+      "top1_agrees_frac_mean": 0.9757303370786516,
+      "strict_reversal_frac_min": 0.011235955056179775,
+      "strict_reversal_frac_mean": 0.023595505617977526
+    },
+    "Priority score": {
+      "order_preserving_frac_min": 0.6359550561797753,
+      "order_preserving_frac_mean": 0.6831460674157304,
+      "top1_agrees_frac_min": 0.7820224719101123,
+      "top1_agrees_frac_mean": 0.8060674157303371,
+      "strict_reversal_frac_min": 0.2808988764044944,
+      "strict_reversal_frac_mean": 0.31595505617977526
+    }
+  },
+  "nested_per_fold": [
+    {
+      "fold": 0,
+      "nested_err": 0.01573033707865168,
+      "prob_err": 0.022471910112359605
+    },
+    {
+      "fold": 1,
+      "nested_err": 0.0,
+      "prob_err": 0.0046511627906976605
+    },
+    {
+      "fold": 2,
+      "nested_err": 0.13286713286713292,
+      "prob_err": 0.07925407925407923
+    },
+    {
+      "fold": 3,
+      "nested_err": 0.015909090909090873,
+      "prob_err": 0.006818181818181834
+    },
+    {
+      "fold": 4,
+      "nested_err": 0.0,
+      "prob_err": 0.0
+    }
+  ],
+  "nested": {
+    "error": 0.032509157509157505,
+    "minus_prob": 0.010073260073260037,
+    "ci": [
+      0.0011394239700165427,
+      0.02266065720309747
+    ],
+    "choices": [
+      {
+        "outer_fold": 0,
+        "gamma": 0.0,
+        "s_exp": 1.5,
+        "e_exp": 0.0,
+        "inner_top1_error": 0.0028752156411731,
+        "inner_top1_error_prob_only": 0.0333525014376078
+      },
+      {
+        "outer_fold": 1,
+        "gamma": 1.0,
+        "s_exp": 1.5,
+        "e_exp": 0.0,
+        "inner_top1_error": 0.0182440136830102,
+        "inner_top1_error_prob_only": 0.0473204104903078
+      },
+      {
+        "outer_fold": 2,
+        "gamma": 2.0,
+        "s_exp": 0.0,
+        "e_exp": 0.0,
+        "inner_top1_error": 0.0216524216524216,
+        "inner_top1_error_prob_only": 0.0227920227920227
+      },
+      {
+        "outer_fold": 3,
+        "gamma": 0.0,
+        "s_exp": 1.5,
+        "e_exp": 0.0,
+        "inner_top1_error": 0.0045871559633027,
+        "inner_top1_error_prob_only": 0.0229357798165137
+      },
+      {
+        "outer_fold": 4,
+        "gamma": 0.0,
+        "s_exp": 1.5,
+        "e_exp": 0.0,
+        "inner_top1_error": 0.0097477064220183,
+        "inner_top1_error_prob_only": 0.0326834862385321
+      }
+    ]
+  },
+  "grid_min": 0.007783882783882756,
+  "grid_n_better_than_prob": 11,
+  "grid_best": {
+    "gamma": 0.0,
+    "s_exp": 1.5,
+    "e_exp": 0.0,
+    "top1_error": 0.007783882783882756
+  },
+  "hgb_paired": {
+    "diff": 0.09523809523809523,
+    "ci": [
+      0.05381274263056046,
+      0.1537094546594305
+    ]
+  },
+  "hgb_vs_rf_occ_spearman_channel": [
+    0.48720320095284264,
+    0.3357843137254902,
+    0.19607843137254904,
+    0.556372549019608
+  ],
+  "hgb_vs_rf_occ_spearman_family": [
+    0.8272727272727274,
+    0.1785714285714286,
+    0.42857142857142866,
+    0.6785714285714287
+  ],
+  "hgb_top_family": [
+    "Cooling (CE, CP)",
+    "Pressure",
+    "Efficiency factor",
+    "Efficiency factor"
+  ],
+  "rf_top_family": [
+    "Cooling (CE, CP)",
+    "Pressure",
+    "Efficiency factor",
+    "Temperature"
+  ],
+  "graph_threshold": 0.01,
+  "graph_n_edges": 9,
+  "example": {
+    "cycle": 6,
+    "fold": 0,
+    "p": [
+      0.5240884535717485,
+      0.15685606743500283,
+      0.011704545454545454,
+      0.9242382369366221
+    ],
+    "abar": [
+      0.003340848744487887,
+      0.002952074929619124,
+      0.00023112916495269433,
+      0.023148284097930984
+    ],
+    "M": [
+      1.168531897386365,
+      0.3146382365984727,
+      0.018625171594213084,
+      2.1614463227872047
+    ],
+    "labels": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "order": [
+      "accumulator",
+      "cooler",
+      "valve",
+      "pump"
+    ],
+    "prob_order": [
+      "accumulator",
+      "cooler",
+      "valve",
+      "pump"
+    ],
+    "n_candidates": 597
+  }
+}

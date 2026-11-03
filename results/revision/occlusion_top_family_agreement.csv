@@ -1,0 +1,5 @@
+component,modal_top_family,agree_frac
+Cooler,"Cooling (CE, CP)",0.8
+Valve,Pressure,0.7
+Pump,Efficiency factor,0.8
+Accumulator,Efficiency factor,0.6

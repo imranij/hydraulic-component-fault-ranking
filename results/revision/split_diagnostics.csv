@@ -1,0 +1,5 @@
+split,test_cycles_with_profile_in_train,test_cycles_with_run_in_train,test_cycles_adjacent_to_train_cycle_total
+A,0.40866189989785495,0.213585291113381,18
+B,0.36161837926848184,0.0,0
+C,0.0,0.0,263
+T,0.2280966767371601,0.18277945619335348,1

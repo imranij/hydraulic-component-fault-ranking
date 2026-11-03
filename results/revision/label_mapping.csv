@@ -1,0 +1,15 @@
+component,quantity,level,cycles,binary_label
+Cooler,efficiency (%),100,741,0
+Cooler,efficiency (%),20,732,1
+Cooler,efficiency (%),3,732,1
+Valve,switching condition (%),100,1125,0
+Valve,switching condition (%),90,360,1
+Valve,switching condition (%),80,360,1
+Valve,switching condition (%),73,360,1
+Pump,internal leakage level,2,492,1
+Pump,internal leakage level,1,492,1
+Pump,internal leakage level,0,1221,0
+Accumulator,pressure (bar),130,599,0
+Accumulator,pressure (bar),115,399,1
+Accumulator,pressure (bar),100,399,1
+Accumulator,pressure (bar),90,808,1

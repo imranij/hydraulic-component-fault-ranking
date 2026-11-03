@@ -1,0 +1,13 @@
+split_key,policy,n_cycles,top1_error
+A,Probability only,566,0.03886925795053009
+A,Local occlusion,566,0.044169611307420475
+A,Priority score,566,0.07067137809187274
+A,Severity/effort,566,0.519434628975265
+B,Probability only,566,0.04946996466431097
+B,Local occlusion,566,0.051236749116607805
+B,Priority score,566,0.09187279151943462
+B,Severity/effort,566,0.519434628975265
+C,Probability only,566,0.02473498233215543
+C,Local occlusion,566,0.02473498233215543
+C,Priority score,566,0.028268551236749095
+C,Severity/effort,566,0.519434628975265
