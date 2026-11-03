@@ -696,6 +696,34 @@ def write_tables(lab, spl, rk, od, cal, sens, res, hgb, stab, diag, r13):
     (MAN / "generated_rev_stability_table.tex").write_text("\n".join(L), encoding="utf-8")
     for name in ["split", "calibration", "sensitivity", "stability", "boundcheck", "channelmap"]:
         fit_width(MAN / f"generated_rev_{name}_table.tex")
+    apply_captions()
+
+
+# Final captions (style-edited); applied after each table is written so a re-run reproduces them.
+CAPTIONS = {
+    'labelmap': ('tab:labelmap', 'Binary component-fault labels derived from the four condition columns of \\texttt{profile.txt}. Each level is listed with its cycle count, and only the nominal level is mapped to 0. The fifth column, the stable flag, is 0 for 1449 cycles and 1 for 756. It is retained in every split, is not used to define labels or features, and is constant within every condition-run, so the 194 runs are the same with or without it.'),
+    'channelmap': ('tab:channelmap', 'Mapping of the 17 sensor channels to seven physical families. Occlusion, permutation and SHAP attributions in Table~\\ref{tab:explainagree} and in the priority score use the 17 channels as groups, while Figs.~\\ref{fig:evidencegraph} and~\\ref{fig:importance} occlude or permute each family as one group. Motor power and vibration are separate families, cooling efficiency and cooling power form one family, and the efficiency factor is its own family.'),
+    'split': ('tab:splitcompare', "Component-fault classification under four evaluation protocols. Per-component F1 is computed on pooled held-out predictions for seed 2026, and macro-F1 is the mean over folds of the per-fold macro-F1, averaged over the stated seeds. Positive and negative test support is given in parentheses. F1 is reported as n/a when the held-out set contains no positive case, because recall is then undefined, and ``Macro-F1, defined'' averages only the components whose F1 is defined in each fold. The last column gives the share of held-out cycles whose condition profile also occurs in training and the number of held-out cycles immediately adjacent in time to a training cycle."),
+    'boundcheck': ('tab:boundcheck', "Top-1 component-fault ranking error on fault-containing held-out cycles, the probability-derived union bound $B_p$ of \\eqref{eq:ceilingbound}, and the order-preservation check of Proposition~\\ref{prop:bound}. ``Violation'' is the share of cycles with at least one pair $i,j$ such that $p_i>p_j$ but $s_i\\le s_j$, and $B_p$ is guaranteed to cover a policy only when this share is zero. ``Top-1 = prob.'' is the share of cycles on which the policy's first-ranked component is the same as that of probability-only ranking. $B_s$ is the bound recomputed from the policy's own score with ties counted as misranks, and it holds for every policy by construction. All values are for seed 2026, with run-clustered 95\\% intervals from 2{,}000 resamples."),
+    'paired': ('tab:paireddiff', "Run-clustered paired bootstrap differences for seed 2026 (2{,}000 resamples, 95\\% intervals). $\\Delta_{\\mathrm{prio}}$ is the priority-score error minus the probability-only error, and $E-B_p$ is a policy's error minus the probability-derived bound, both computed on the same resample."),
+    'calibration': ('tab:calibrationoof', 'Calibration of the raw random-forest probabilities (no calibrator is fitted) on pooled out-of-fold predictions for the three leakage-controlled protocols, seed 2026. The intervals in brackets are run-clustered 95\\% intervals from 1{,}000 resamples.'),
+    'sensitivity': ('tab:sensitivity', 'Priority-weight sensitivity on the leakage-safe blocked split (pooled out-of-fold predictions, seed 2026) for the score $p_c(1+\\gamma\\bar a_c)S_c^{a}/E_c^{b}$. $\\Delta$ is the top-1 error minus the probability-only error, with a run-clustered paired 95\\% interval. The last row selects $(\\gamma,a,b)$ from a 48-point grid by inner cross-validation on the training blocks of each outer fold only.'),
+    'reconcile': ('tab:reconcile', 'Reconciliation of the blocked-split top-1 figures. Table~\\ref{tab:ceilingbound} pools the out-of-fold predictions of all five folds (2205 cycles, seed 2026), whereas the degradation sweep of Table~\\ref{tab:degradationwalk} evaluates only fold~0 (blocks 0 and 9, 445 cycles) and averages ten seeds. The fold-0 columns give top-1 accuracy and the pooled columns give top-1 error.'),
+    'stability': ('tab:stability', "Stability of the grouped attributions on the blocked split, given as the median (minimum) Spearman correlation between importance vectors. ``Fit vs.\\ fit'' compares all pairs among ten fits, which are five folds with seeds 17 and 2026. SHAP rows use seed 2026 and 120 held-out cycles per fold. Pairs with a constant vector are excluded, which removes up to 38\\% of permutation pairs for the cooler and accumulator because most of their groups have zero drop."),
+}
+
+
+def apply_captions():
+    for key, (label, cap) in CAPTIONS.items():
+        path = MAN / f"generated_rev_{key}_table.tex"
+        t = path.read_text(encoding="utf-8")
+        L = t.index("\\label{%s}" % label)
+        i = t.rindex("\\caption{", 0, L) + 9
+        d, j = 1, i
+        while d:
+            d += {"{": 1, "}": -1}.get(t[j], 0)
+            j += 1
+        path.write_text(t[:i] + cap + t[j - 1:], encoding="utf-8")
 
 
 if __name__ == "__main__":
