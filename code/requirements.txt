@@ -1,0 +1,10 @@
+# Versions of the recorded environment (Python 3.13). The revision analyses were run with exactly these.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.18.1
+scikit-learn==1.7.2
+matplotlib==3.11.2
+seaborn==0.13.2
+networkx==3.4.2
+shap==0.54.1
+# torch is needed only for the 1-D CNN branch of code/comparators.py
