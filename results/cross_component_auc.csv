@@ -1,0 +1,13 @@
+split,component,cross_auc,n_cycles
+random_stratified,cooler,1.0,199
+random_stratified,valve,1.0,323
+random_stratified,pump,1.0,352
+random_stratified,accumulator,1.0,174
+blocked_group_5fold,cooler,0.9958333333333333,720
+blocked_group_5fold,valve,0.9990942028985508,1104
+blocked_group_5fold,pump,1.0,1200
+blocked_group_5fold,accumulator,0.9204152249134948,578
+temporal_chronological_0.70,cooler,1.0,641
+temporal_chronological_0.70,valve,1.0,281
+temporal_chronological_0.70,pump,1.0,313
+temporal_chronological_0.70,accumulator,0.0,112
