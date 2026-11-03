@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\caption{Component-fault ranking on fault-containing test cycles of the random split (optimistic reference). Top-1 is the share of cycles whose first-ranked component is truly faulty. Static policies are included to test whether the priority rule adds information beyond the severity and effort constants. The leakage-safe comparison is in Tables~\ref{tab:ceilingbound} and~\ref{tab:boundcheck}.}
+\label{tab:ranking}
+\footnotesize
+\begin{tabularx}{\textwidth}{Xrrr}
+\toprule
+Method & LRAP & Top-1 & MRR \\
+\midrule
+\multicolumn{4}{l}{\emph{Static policy baselines (do not use classifier probabilities)}} \\
+Severity-only policy & 0.781 & 0.697 & 0.821 \\
+Low-effort-only policy & 0.805 & 0.735 & 0.845 \\
+Severity/effort heuristic & 0.837 & 0.735 & 0.859 \\
+\midrule
+\multicolumn{4}{l}{\emph{Explanation-only}} \\
+Explanation confidence only & 0.984 & 0.986 & 0.993 \\
+\midrule
+\multicolumn{4}{l}{\emph{Probability-informed policies (all saturate on this split)}} \\
+Probability only & 1.000 & 1.000 & 1.000 \\
+Permutation weighted & 1.000 & 1.000 & 1.000 \\
+Local occlusion & 1.000 & 1.000 & 1.000 \\
+Priority score (prob.\ $+$ evidence $+$ severity/effort) & 1.000 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\caption{Run-clustered paired bootstrap differences for seed 2026 (2{,}000 resamples, 95\% intervals). $\Delta_{\mathrm{prio}}$ is the priority-score error minus the probability-only error, and $E-B_p$ is a policy's error minus the probability-derived bound, both computed on the same resample.}
+\label{tab:paireddiff}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lll}
+\toprule
+Protocol & Quantity & Estimate [95\% CI] \\
+\midrule
+Blocked (orig.) & $\Delta_{\mathrm{prio}}$ & +0.029 [0.012, 0.052] \\
+ & $E-B_p$, prob.\ only & -0.000 [-0.001, 0.000] \\
+ & $E-B_p$, local occl. & +0.005 [0.001, 0.012] \\
+ & $E-B_p$, priority & +0.028 [0.012, 0.051] \\
+\midrule
+Blocked, purged & $\Delta_{\mathrm{prio}}$ & +0.021 [0.008, 0.040] \\
+ & $E-B_p$, prob.\ only & -0.001 [-0.003, 0.000] \\
+ & $E-B_p$, local occl. & +0.002 [-0.001, 0.007] \\
+ & $E-B_p$, priority & +0.020 [0.007, 0.039] \\
+\midrule
+Profile holdout & $\Delta_{\mathrm{prio}}$ & +0.001 [-0.001, 0.003] \\
+ & $E-B_p$, prob.\ only & -0.000 [-0.001, 0.000] \\
+ & $E-B_p$, local occl. & -0.000 [-0.001, 0.000] \\
+ & $E-B_p$, priority & +0.000 [-0.001, 0.003] \\
+\midrule
+Chronological & $\Delta_{\mathrm{prio}}$ & +0.000 [0.000, 0.000] \\
+ & $E-B_p$, prob.\ only & +0.000 [-0.000, 0.000] \\
+ & $E-B_p$, local occl. & +0.000 [-0.000, 0.000] \\
+ & $E-B_p$, priority & +0.000 [-0.000, 0.000] \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\caption{Per-component confusion matrices under the strict chronological split (TN/FP/FN/TP and F1). Two entries are degenerate. The cooler has no positive cases in the final block, so its recall and F1 are undefined (n/a), and the 0.667 macro-F1 of Table~\ref{tab:leakage_robustness} enters it as 0 by the scikit-learn \texttt{zero\_division=0} convention. The accumulator has no true negatives, because a fault is predicted for every cycle.}
+\label{tab:confusion}
+\begin{tabular}{lrrrrr}
+\toprule
+Component & TN & FP & FN & TP & F1 \\
+\midrule
+Cooler & 662 & 0 & 0 & 0 & n/a \\
+Valve & 302 & 0 & 127 & 233 & 0.786 \\
+Pump & 334 & 0 & 3 & 325 & 0.995 \\
+Accumulator & 0 & 133 & 0 & 529 & 0.888 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Reconciliation of the blocked-split top-1 figures. Table~\ref{tab:ceilingbound} pools the out-of-fold predictions of all five folds (2205 cycles, seed 2026), whereas the degradation sweep of Table~\ref{tab:degradationwalk} evaluates only fold~0 (blocks 0 and 9, 445 cycles) and averages ten seeds. The fold-0 columns give top-1 accuracy and the pooled columns give top-1 error.}
+\label{tab:reconcile}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{rrrrr}
+\toprule
+Seed & Fold 0 acc. & Fold 0 acc. & Pooled err. & Pooled err. \\
+ & prob.\ only & priority & prob.\ only & priority \\
+\midrule
+17 & 0.978 & 0.978 & 0.022 & 0.054 \\
+2026 & 0.978 & 0.978 & 0.022 & 0.051 \\
+101 & 0.978 & 0.978 & 0.025 & 0.056 \\
+202 & 0.978 & 0.978 & 0.025 & 0.052 \\
+303 & 0.978 & 0.978 & 0.021 & 0.053 \\
+404 & 0.978 & 0.978 & 0.022 & 0.051 \\
+505 & 0.978 & 0.978 & 0.026 & 0.050 \\
+606 & 0.978 & 0.978 & 0.024 & 0.058 \\
+707 & 0.978 & 0.978 & 0.024 & 0.056 \\
+808 & 0.978 & 0.978 & 0.025 & 0.059 \\
+\midrule
+Mean & 0.978 & 0.978 & 0.024 & 0.054 \\
+\bottomrule
+\end{tabular}
+\end{table}

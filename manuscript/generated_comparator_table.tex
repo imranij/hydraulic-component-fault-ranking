@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Classifier comparators, given as mean $\pm$ standard deviation over the seeds 17, 2026 and 4242. The blocked row uses only fold~0 (blocks 0 and 9, 445 cycles), which is the fold of the degradation sweep, and pooled five-fold results for HistGradientBoosting are in Sec.~\ref{sec:comparators}. HistGradientBoosting without subsampling is deterministic, so its standard deviation is 0. It uses the same 187-feature cycle table as the random forest, while the 1-D CNN uses the 17 raw sensor streams block-averaged to a common 60 samples per cycle (Sec.~\ref{sec:comparators}). Mean cross-AUC and the union-bound top-1 error are computed as in Table~\ref{tab:ceilingbound}.}
+\label{tab:comparators}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrr}
+\hline
+Split & Classifier & Macro-F1 & Top-1 acc.\ & Mean cross-AUC \\
+\hline
+Random & Random Forest (headline) & 0.999 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 1.000 \\
+Random & HistGradientBoosting & 0.999 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 1.000 \\
+Random & 1D-CNN (raw, resampled 1 Hz) & 0.939 $\pm$ 0.010 & 0.993 $\pm$ 0.001 & 0.995 \\
+\hline
+Blocked 5-fold & Random Forest (headline) & 0.962 $\pm$ 0.003 & 0.978 $\pm$ 0.000 & 0.987 \\
+Blocked 5-fold & HistGradientBoosting & 0.967 $\pm$ 0.000 & 0.982 $\pm$ 0.000 & 0.991 \\
+Blocked 5-fold & 1D-CNN (raw, resampled 1 Hz) & 0.695 $\pm$ 0.074 & 0.901 $\pm$ 0.054 & 0.954 \\
+\hline
+Chronological & Random Forest (headline) & 0.645 $\pm$ 0.020 & 0.825 $\pm$ 0.000 & 0.750 \\
+Chronological & HistGradientBoosting & 0.670 $\pm$ 0.000 & 0.958 $\pm$ 0.000 & 0.928 \\
+Chronological & 1D-CNN (raw, resampled 1 Hz) & 0.222 $\pm$ 0.000 & 0.825 $\pm$ 0.000 & 0.695 \\
+\hline
+\end{tabular}}
+\end{table}

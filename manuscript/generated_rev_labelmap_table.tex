@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Binary component-fault labels derived from the four condition columns of \texttt{profile.txt}. Each level is listed with its cycle count, and only the nominal level is mapped to 0. The fifth column, the stable flag, is 0 for 1449 cycles and 1 for 756. It is retained in every split, is not used to define labels or features, and is constant within every condition-run, so the 194 runs are the same with or without it.}
+\label{tab:labelmap}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrr}
+\toprule
+Component & Quantity & Level & Cycles & Label \\
+\midrule
+Cooler & efficiency (%) & 100 & 741 & 0 \\
+ &  & 20 & 732 & 1 \\
+ &  & 3 & 732 & 1 \\
+\midrule
+Valve & switching condition (%) & 100 & 1125 & 0 \\
+ &  & 90 & 360 & 1 \\
+ &  & 80 & 360 & 1 \\
+ &  & 73 & 360 & 1 \\
+\midrule
+Pump & internal leakage level & 2 & 492 & 1 \\
+ &  & 1 & 492 & 1 \\
+ &  & 0 & 1221 & 0 \\
+\midrule
+Accumulator & pressure (bar) & 130 & 599 & 0 \\
+ &  & 115 & 399 & 1 \\
+ &  & 100 & 399 & 1 \\
+ &  & 90 & 808 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

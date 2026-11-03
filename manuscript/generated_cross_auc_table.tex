@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Cross-component AUC per component and split, defined as the probability that the best true-positive component's score exceeds this component's score on fault-containing cycles where it is a true negative.}
+\label{tab:crossauc}
+\footnotesize
+\begin{tabular}{llrr}
+\hline
+Split & Component & Cross-AUC & $n$ cycles \\
+\hline
+Random & Cooler & 1.000 & 199 \\
+Random & Valve & 1.000 & 323 \\
+Random & Pump & 1.000 & 352 \\
+Random & Accumulator & 1.000 & 174 \\
+\hline
+Blocked 5-fold & Cooler & 0.996 & 720 \\
+Blocked 5-fold & Valve & 0.999 & 1104 \\
+Blocked 5-fold & Pump & 1.000 & 1200 \\
+Blocked 5-fold & Accumulator & 0.920 & 578 \\
+\hline
+Chronological & Cooler & 1.000 & 641 \\
+Chronological & Valve & 1.000 & 281 \\
+Chronological & Pump & 1.000 & 313 \\
+Chronological & Accumulator & 0.000 & 112 \\
+\hline
+\end{tabular}
+\end{table}

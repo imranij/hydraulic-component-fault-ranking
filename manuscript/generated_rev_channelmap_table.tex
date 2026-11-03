@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Mapping of the 17 sensor channels to seven physical families. Occlusion, permutation and SHAP attributions in Table~\ref{tab:explainagree} and in the priority score use the 17 channels as groups, while Figs.~\ref{fig:evidencegraph} and~\ref{fig:importance} occlude or permute each family as one group. Motor power and vibration are separate families, cooling efficiency and cooling power form one family, and the efficiency factor is its own family.}
+\label{tab:channelmap}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllr}
+\toprule
+Family & Channels & Unit & Rate (Hz) \\
+\midrule
+Pressure & PS1, PS2, PS3, PS4, PS5, PS6 & bar & 100 \\
+Volume flow & FS1, FS2 & l/min & 10 \\
+Temperature & TS1, TS2, TS3, TS4 & $^\circ$C & 1 \\
+Motor power & EPS1 & W & 100 \\
+Vibration & VS1 & mm/s & 1 \\
+Cooling (CE, CP) & CE, CP & %, kW & 1 \\
+Efficiency factor & SE & % & 1 \\
+\bottomrule
+\end{tabular}}
+\end{table}

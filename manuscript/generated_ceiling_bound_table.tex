@@ -1,0 +1,37 @@
+\begin{table}[t]
+\centering
+\caption{Probability-derived union bound $B_p$ on top-1 component-fault ranking error (Sec.~\ref{sec:ceiling}) against each policy's observed top-1 error, with 2{,}000-resample bootstrap 95\% intervals in brackets. The bootstrap resamples whole condition-runs, which are the 194 contiguous blocks of cycles sharing one \texttt{profile.txt} row (Sec.~\ref{sec:resampling}). The last column marks whether the point estimate of the error is at or below that of $B_p$, and it is descriptive only. Whether a policy differs from the bound is tested with the paired intervals of Table~\ref{tab:paireddiff}, and $B_p$ is guaranteed to cover only order-preserving policies (Proposition~\ref{prop:bound}). The blocked rows pool the out-of-fold predictions of all five folds (2205 cycles, seed 2026). ``Priority score'' is Eq.~\eqref{eq:priority}. Code is in \texttt{code/run\_clustered\_bootstrap.py} and data in \texttt{results/ceiling\_bound\_check\_runclustered.csv}.}
+\label{tab:ceilingbound}
+\tiny
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{p{1.35cm}p{1.85cm}p{1.75cm}p{1.75cm}p{0.5cm}}
+\hline
+ Split & Policy & Obs.\ error & Bound $B_p$ & $E\le B_p$ \\
+ & & [95\% CI] & [95\% CI] & (point) \\
+\hline
+Random & Probability only & 0.000 [0.000, 0.000] & 0.000 [0.000, 0.000] & Y \\
+Random & Severity only & 0.303 [0.186, 0.448] & 0.000 [0.000, 0.000] & N \\
+Random & Low effort only & 0.265 [0.142, 0.412] & 0.000 [0.000, 0.000] & N \\
+Random & Severity/effort & 0.265 [0.142, 0.412] & 0.000 [0.000, 0.000] & N \\
+Random & Explanation conf.\ only & 0.014 [0.001, 0.028] & 0.000 [0.000, 0.000] & N \\
+Random & Local occlusion & 0.000 [0.000, 0.000] & 0.000 [0.000, 0.000] & Y \\
+Random & Priority score & 0.000 [0.000, 0.000] & 0.000 [0.000, 0.000] & Y \\
+\hline
+Blocked 5-fold & Probability only & 0.022 [0.009, 0.040] & 0.023 [0.009, 0.040] & Y \\
+Blocked 5-fold & Severity only & 0.330 [0.194, 0.492] & 0.023 [0.009, 0.040] & N \\
+Blocked 5-fold & Low effort only & 0.265 [0.134, 0.433] & 0.023 [0.009, 0.040] & N \\
+Blocked 5-fold & Severity/effort & 0.265 [0.134, 0.433] & 0.023 [0.009, 0.040] & N \\
+Blocked 5-fold & Explanation conf.\ only & 0.087 [0.044, 0.138] & 0.023 [0.009, 0.040] & N \\
+Blocked 5-fold & Local occlusion & 0.028 [0.012, 0.051] & 0.023 [0.009, 0.040] & N \\
+Blocked 5-fold & Priority score & 0.051 [0.027, 0.084] & 0.023 [0.009, 0.040] & N \\
+\hline
+Chronological & Probability only & 0.175 [0.080, 0.301] & 0.175 [0.080, 0.301] & Y \\
+Chronological & Severity only & 1.000 [1.000, 1.000] & 0.175 [0.080, 0.301] & N \\
+Chronological & Low effort only & 0.175 [0.080, 0.301] & 0.175 [0.080, 0.301] & Y \\
+Chronological & Severity/effort & 0.175 [0.080, 0.301] & 0.175 [0.080, 0.301] & Y \\
+Chronological & Explanation conf.\ only & 0.175 [0.080, 0.301] & 0.175 [0.080, 0.301] & Y \\
+Chronological & Local occlusion & 0.175 [0.080, 0.301] & 0.175 [0.080, 0.301] & Y \\
+Chronological & Priority score & 0.175 [0.080, 0.301] & 0.175 [0.080, 0.301] & Y \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Chronological generalization curve, giving macro-F1, mean cross-component AUC and the top-1 component-fault ranking accuracy of two policies as the cut point moves later in the cycle sequence. All rows use seed 2026, and the 0.70 row matches Table~\ref{tab:leakage_robustness}. At cut points 0.50 to 0.65 the cooler training fold contains no healthy cooler (Sec.~\ref{sec:chronocurve}), so the cooler classifier degenerates to a constant score. This lowers every score that includes it and is a training-fold pathology of the early cuts, not evidence about ranking quality.}
+\label{tab:chronocurve}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rrrrr}
+\hline
+Cut & Macro-F1 & Mean & Top-1 & Top-1 \\
+ & & cross-AUC & prob.\ only & priority \\
+\hline
+0.50 & 0.825 & 0.683 & 0.335 & 0.335 \\
+0.55 & 0.803 & 0.685 & 0.259 & 0.259 \\
+0.60 & 0.779 & 0.692 & 0.164 & 0.164 \\
+0.65 & 0.718 & 0.699 & 0.041 & 0.041 \\
+0.70 & 0.667 & 0.750 & 0.825 & 0.825 \\
+0.75 & 0.642 & 0.750 & 0.789 & 0.789 \\
+0.80 & 0.524 & 1.000 & 1.000 & 1.000 \\
+0.85 & 0.691 & 1.000 & 1.000 & 1.000 \\
+0.90 & 0.706 & 1.000 & 1.000 & 1.000 \\
+\hline
+\end{tabular}
+\end{table}

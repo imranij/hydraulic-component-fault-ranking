@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Component-fault classification under four evaluation protocols. Per-component F1 is computed on pooled held-out predictions for seed 2026, and macro-F1 is the mean over folds of the per-fold macro-F1, averaged over the stated seeds. Positive and negative test support is given in parentheses. F1 is reported as n/a when the held-out set contains no positive case, because recall is then undefined, and ``Macro-F1, defined'' averages only the components whose F1 is defined in each fold. The last column gives the share of held-out cycles whose condition profile also occurs in training and the number of held-out cycles immediately adjacent in time to a training cycle.}
+\label{tab:splitcompare}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Protocol & Seeds & Macro-F1 & Macro-F1, & Cooler & Valve & Pump & Accum. & Profile in train / \\
+ & & (all 4) & defined & F1 (+/$-$) & F1 (+/$-$) & F1 (+/$-$) & F1 (+/$-$) & adjacent cycles \\
+\midrule
+Blocked (original, 10 equal blocks) & 2 & 0.965 & 0.965 & 0.995 (1464/741) & 0.991 (1080/1125) & 0.993 (984/1221) & 0.888 (1606/599) & 0.41 / 18 \\
+Blocked, run-aligned + purged & 3 & 0.962 & 0.962 & 0.995 (1464/741) & 0.964 (1080/1125) & 0.993 (984/1221) & 0.896 (1606/599) & 0.36 / 0 \\
+Condition-profile holdout & 3 & 0.963 & 0.963 & 0.994 (1464/741) & 0.970 (1080/1125) & 0.998 (984/1221) & 0.900 (1606/599) & 0.00 / 263 \\
+Chronological 70/30 & 1 & 0.667 & 0.890 & n/a (0/662) & 0.786 (360/302) & 0.995 (328/334) & 0.888 (529/133) & 0.23 / 1 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

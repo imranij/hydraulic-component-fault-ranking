@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{Split robustness and noise stress for the diagnostics model (macro-F1 over all four components). The random split is an optimistic reference, the ten-block split is the leakage-controlled protocol of the original submission, and the strict chronological split exposes strong distribution shift in the final cycles. Sensor-noise rows are measured on the chronological split. The random-split row is recomputed with an independently retrained model (seed 2026), so it differs by ordinary seed variance from the seed-17 model behind Table~\ref{tab:componentmetrics} (0.998 here and 0.999 there).}
+\label{tab:leakage_robustness}
+\begin{tabular}{lr}
+\toprule
+Evaluation & Macro-F1 \\
+\midrule
+\multicolumn{2}{l}{\emph{Split protocol}} \\
+Random stratified split (optimistic reference) & 0.998 \\
+Blocked group 5-fold split (leakage-safe headline) & \textbf{0.965} \\
+Temporal chronological split (strict stress test) & 0.667 \\
+\midrule
+\multicolumn{2}{l}{\emph{Sensor-noise stress, chronological split}} \\
+Temporal split, sensor noise $\sigma=0.00$ & 0.667 \\
+Temporal split, sensor noise $\sigma=0.25$ & 0.601 \\
+Temporal split, sensor noise $\sigma=0.50$ & 0.532 \\
+Temporal split, sensor noise $\sigma=1.00$ & 0.482 \\
+Temporal split, sensor noise $\sigma=2.00$ & 0.447 \\
+\bottomrule
+\end{tabular}
+\end{table*}

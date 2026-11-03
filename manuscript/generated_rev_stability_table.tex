@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Stability of the grouped attributions on the blocked split, given as the median (minimum) Spearman correlation between importance vectors. ``Fit vs.\ fit'' compares all pairs among ten fits, which are five folds with seeds 17 and 2026. SHAP rows use seed 2026 and 120 held-out cycles per fold. Pairs with a constant vector are excluded, which removes up to 38\% of permutation pairs for the cooler and accumulator because most of their groups have zero drop.}
+\label{tab:stability}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Comparison & Cooler & Valve & Pump & Accum. \\
+\midrule
+Occlusion, 17 channels, fit vs.\ fit & 0.35 (-0.35) & 0.30 (-0.27) & 0.60 (0.13) & 0.53 (-0.16) \\
+Permutation, 17 channels, fit vs.\ fit & 0.36 (-0.29) & 0.32 (-0.03) & 0.54 (0.22) & -0.01 (-0.55) \\
+SHAP, 17 channels, fold vs.\ fold & 0.87 (0.78) & 0.81 (0.66) & 0.87 (0.81) & 0.35 (-0.12) \\
+Occlusion, 7 families, fit vs.\ fit & 0.26 (-0.68) & 0.54 (-0.43) & 0.75 (0.32) & 0.79 (0.36) \\
+Permutation, 7 families, fit vs.\ fit & 0.68 (-0.25) & 0.59 (-0.04) & 0.68 (0.14) & 0.32 (-0.39) \\
+Occlusion vs.\ SHAP, same fold & 0.21 (-0.17) & 0.50 (-0.26) & 0.73 (0.61) & 0.59 (-0.00) \\
+Occlusion vs.\ permutation, same fold & 0.01 (-0.26) & 0.38 (0.08) & 0.39 (0.16) & 0.31 (-0.24) \\
+\bottomrule
+\end{tabular}}
+\end{table}

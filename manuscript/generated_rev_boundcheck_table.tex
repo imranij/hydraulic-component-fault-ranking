@@ -1,0 +1,33 @@
+\begin{table*}[t]
+\centering
+\caption{Top-1 component-fault ranking error on fault-containing held-out cycles, the probability-derived union bound $B_p$ of \eqref{eq:ceilingbound}, and the order-preservation check of Proposition~\ref{prop:bound}. ``Violation'' is the share of cycles with at least one pair $i,j$ such that $p_i>p_j$ but $s_i\le s_j$, and $B_p$ is guaranteed to cover a policy only when this share is zero. ``Top-1 = prob.'' is the share of cycles on which the policy's first-ranked component is the same as that of probability-only ranking. $B_s$ is the bound recomputed from the policy's own score with ties counted as misranks, and it holds for every policy by construction. All values are for seed 2026, with run-clustered 95\% intervals from 2{,}000 resamples.}
+\label{tab:boundcheck}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrlrrrr}
+\toprule
+Protocol & Policy & Error & [95\% CI] & $B_p$ & $B_s$ & Violation & Top-1 = prob. \\
+\midrule
+Blocked (original) & Probability only & 0.022 & [0.009, 0.040] & 0.023 & 0.023 & 0.000 & 1.000 \\
+ & Local occlusion & 0.028 & [0.012, 0.051] & 0.023 & 0.029 & 0.169 & 0.799 \\
+ & Priority score & 0.051 & [0.027, 0.084] & 0.023 & 0.052 & 0.549 & 0.567 \\
+ & Severity/effort & 0.265 & [0.134, 0.433] & 0.023 & 0.326 & 0.953 & 0.166 \\
+\midrule
+Blocked, run-aligned + purged & Probability only & 0.031 & [0.014, 0.053] & 0.032 & 0.032 & 0.000 & 1.000 \\
+ & Local occlusion & 0.034 & [0.016, 0.058] & 0.032 & 0.035 & 0.203 & 0.791 \\
+ & Priority score & 0.051 & [0.028, 0.084] & 0.032 & 0.052 & 0.498 & 0.652 \\
+ & Severity/effort & 0.265 & [0.134, 0.433] & 0.032 & 0.326 & 0.984 & 0.178 \\
+\midrule
+Condition-profile holdout & Probability only & 0.006 & [0.000, 0.014] & 0.007 & 0.007 & 0.000 & 1.000 \\
+ & Local occlusion & 0.006 & [0.000, 0.014] & 0.007 & 0.007 & 0.187 & 0.712 \\
+ & Priority score & 0.007 & [0.001, 0.015] & 0.007 & 0.008 & 0.505 & 0.557 \\
+ & Severity/effort & 0.265 & [0.134, 0.433] & 0.007 & 0.326 & 0.956 & 0.157 \\
+\midrule
+Chronological 70/30 & Probability only & 0.175 & [0.080, 0.301] & 0.175 & 0.175 & 0.000 & 1.000 \\
+ & Local occlusion & 0.175 & [0.080, 0.301] & 0.175 & 0.175 & 0.000 & 1.000 \\
+ & Priority score & 0.175 & [0.080, 0.301] & 0.175 & 0.175 & 0.111 & 1.000 \\
+ & Severity/effort & 0.175 & [0.080, 0.301] & 0.175 & 0.384 & 0.749 & 1.000 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

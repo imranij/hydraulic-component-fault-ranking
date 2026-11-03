@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Priority-weight sensitivity on the leakage-safe blocked split (pooled out-of-fold predictions, seed 2026) for the score $p_c(1+\gamma\bar a_c)S_c^{a}/E_c^{b}$. $\Delta$ is the top-1 error minus the probability-only error, with a run-clustered paired 95\% interval. The last row selects $(\gamma,a,b)$ from a 48-point grid by inner cross-validation on the training blocks of each outer fold only.}
+\label{tab:sensitivity}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrl}
+\toprule
+Scenario & $\gamma$ & $a$ & $b$ & Error & $\Delta$ [95\% CI] \\
+\midrule
+Probability only & 0.0 & 0.0 & 0.0 & 0.022 & 0 (reference) \\
+Probability + evidence & 1.0 & 0.0 & 0.0 & 0.028 & +0.006 [0.002, 0.013] \\
+Current priority score & 1.0 & 1.0 & 1.0 & 0.051 & +0.029 [0.012, 0.052] \\
+Dampened effort penalty & 1.0 & 1.0 & 0.5 & 0.039 & +0.017 [0.005, 0.035] \\
+High severity emphasis & 1.0 & 1.5 & 1.0 & 0.045 & +0.022 [0.007, 0.045] \\
+High explanation emphasis & 2.0 & 1.0 & 1.0 & 0.051 & +0.028 [0.012, 0.052] \\
+Probability x S/E (Fig. 11 rule) & 0.0 & 1.0 & 1.0 & 0.053 & +0.030 [0.013, 0.055] \\
+Policy-only severity/effort & -- & 1.0 & 1.0 & 0.265 & -- \\
+\midrule
+Nested selection & \multicolumn{3}{c}{per fold} & 0.033 & +0.010 [0.001, 0.023] \\
+\bottomrule
+\end{tabular}}
+\end{table}
