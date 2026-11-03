@@ -1,0 +1,143 @@
+path,bytes,sha256,role,deposited,note
+CITATION.cff,570,3f1c869d102d0b698873a571c38dd8ed5721a2b32d2b7b12a32a20cb4eee429e,citation metadata,yes,
+HOW_TO_INSTALL_AND_REPRODUCE.md,4049,2b9bcc8f59cf00c53edea62ebc92b7ec6fcf2618f94e60770dedd7d7510e525c,documentation,yes,
+LICENSE,1215,5f42639c69363d85809a0640c61479da6b203b2a0f027f10a9c397dc211c8c71,licence,yes,
+README.md,2459,c1f33eb09312fed6f1d492b1e01028db7fc5c4742426c8ab4cc59a3a86ee4e35,documentation,yes,
+code/EMITTER_ORDER.md,4724,a2392233c0165d3fdcf006c064c784689f6bf94dcde839c31304c57ffcb43300,documentation,yes,
+code/PROVENANCE_REPORT.txt,21731,20f0abeb371540b3aa637cb8cb50faca35a47f472abc26296c1f826e79fdc6d6,verifier output,yes,submission-version manuscript
+code/ceiling_analysis.py,30642,2c2c84ceed6bdf153179fde7e5b62794e5b2d2af89f31cc43b426ac7cadaf994,"pipeline, revision and verifier code",yes,
+code/comparators.py,13518,92a74fc4317fb9bded350ae6a4b487681327a14d7954cd24a8faf61ae064180d,"pipeline, revision and verifier code",yes,
+code/degradation_walk.py,14695,1289280a9c318f46403e5a9f0b0a328602231e1e6648657a6e6280a0bd719da7,"pipeline, revision and verifier code",yes,
+code/leakage_robustness.py,6734,924d58dd4cf8c7303ee2411b6e2054212ab88b69debd65621b65a0e0be740001,"pipeline, revision and verifier code",yes,
+code/make_degradation_table.py,2759,82075585ba9712382f2ee4323b33c9a754e529b078fcc8e8876a80cc0536844e,"pipeline, revision and verifier code",yes,
+code/paper3_diagnostics_experiment.py,28807,ef3ddb16866c5b56d72336c8ab25d3ea29ec40ab0e3116d60f16679c78d29efd,"pipeline, revision and verifier code",yes,
+code/requirements.txt,299,0e901fe6cbfacb05a8d3758c371d6fabeb6ef5c82e7b8d9cd066298fb5f322d5,environment pin,yes,
+code/revision_analyse.py,46196,b2daf406b2b2435174c2a79656736829ca0205e0607a6812ea01c0d65e71badd,"pipeline, revision and verifier code",yes,
+code/revision_analyses.py,13770,3170690fdd09144c75b8cf8dc3216798190fa678b5aee6bc7253b7547e8fcd7b,"pipeline, revision and verifier code",yes,
+code/revision_figures.py,7155,34d378f48dce1897704a05e69908dd6064150343d07fbfba3fdfd71dc52c4904,"pipeline, revision and verifier code",yes,
+code/revision_schematics.py,5909,d8869ebc87563c2a6c615d1b7cf52f6d5b95c9e6366b2a9ac1f38eb4f4ea8e7d,"pipeline, revision and verifier code",yes,
+code/run_clustered_bootstrap.py,16684,45097c30bf3f03f97ac28f6cd40c76a081e2fbcf601cde4934d3c93eb8fb291c,"pipeline, revision and verifier code",yes,
+code/verify_manuscript_numbers.py,70466,028375bf093250c4bcff6cd9297dd489795d56df67ab5993d78569b5dbb7cbe4,"pipeline, revision and verifier code",yes,
+data/processed/paper3_feature_groups.json,3208,0f78d0a322e8396abb6a83e3b96f39f54921b3e0b405bf44a1e74b253c416be3,derived feature table,yes,
+data/processed/paper3_features.csv,6576532,be633db23a620ff02adb3e9c1fbc8d62442227e5eb02fc49e635d033ba2a5697,derived feature table,yes,derived from the UCI hydraulic raw streams
+data/processed/paper3_targets.csv,75439,41d846f185d63f6f8f0e287552d5b0aa52d7957fd1abb49411c1483932ce2ca0,derived feature table,yes,derived from the UCI hydraulic raw streams
+data/uci_hydraulic_raw/CE.txt,911516,2adc6e258be8e3b7a303b7962f485a7984099cea21248c3bf9f18c7d87283c09,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/CP.txt,779343,63f60132cb5a30879c6f5c73640a39c69e416013195fe62dafe5133b0747baf4,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/EPS1.txt,87411594,2a8d13ca793bb36c0ec4afd27b0103b97b3c1b5a176677be5e7a2ae98c277ab9,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/FS1.txt,7581926,7ff09b17047f776befc136b7902bc7bd4419f96dc107a7ae94d8c412effe0375,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/FS2.txt,8271923,5ee983f88e15ee054846b183224ebcab568b07e3bbe70a4f7f838e603cf1177f,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/PS1.txt,91391892,168e2e663bb511043a15a9c978b93a6e0280b27b113133d0a26f738170af39c0,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/PS2.txt,82373611,2c283dac9a874828ac98badd172a136d52b1de580afb05311c47dc02e5e420c5,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/PS3.txt,69916801,e671e83d99f37bcfe001fed22cb429002a9da8cad026f8abe4c1b7b284c8637f,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/PS4.txt,46698180,fb58417e4a2c4f11d5614b31813b6942eb97f50690688d045090e3e4db2b252f,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/PS5.txt,77776429,42b08cddc1fda06ae0b1c665e208680deb7ad1fff9b9cd9b9879a5820fdf4eca,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/PS6.txt,77875407,9588d363210ab250cf179d930b6b8831643b55bfd8460e54374df18f37456573,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/SE.txt,824838,4c04994cb28b82c001b4931acecf8099e9fe5c864f361c0a7435fbf8745361a1,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/TS1.txt,904586,49cae5e9013d8e230698d95f53a98bb77fedfe3c86985b812cf701dcc9ef06d8,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/TS2.txt,910594,34115a5b86886d83c0592c1ed259605634a8c83d3a051e97bf3e5790f1db58fa,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/TS3.txt,908805,cc271852b4caad39a3b8f5c36d948b57f6cab761dad8b4c7bdd7cb7e99c0b980,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/TS4.txt,910127,548b903f7cd4ea7f2497c0063bdda4bdf8793d55ff43a7d694b8cb835eaf2f55,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/VS1.txt,778499,a6227d9bcb807ee9835c32e73834d3eb9262f0f5cad1b176ca10c473ced25e99,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+data/uci_hydraulic_raw/profile.txt,31196,867987ca884b2f0fd607ad3918329eba887d095af2befa21122cea518eaa584a,raw third-party input,no,"UCI Condition Monitoring of Hydraulic Systems (Helwig, Pignanelli & Schutze, I2MTC 2015, doi:10.1109/I2MTC.2015.7151267), via https://archive.ics.uci.edu/ml"
+deposit/README.md,747,332f93af211f116e8d0cea0191a7e437abf1f69e16c279520621e06f9b8d9c2d,documentation,yes,
+deposit/build_manifest.py,5643,9422a5eca20bc31c61e63ebc188eeb790c301d6e97d96d78d8fc89e26e793c2b,deposit tooling,yes,
+deposit/check_deposit_ready.py,2901,a6041d2e98f53c965dff5fdc03f9ced0447274de9f2a27099d922d095de6dfa8,deposit tooling,yes,
+deposit/zenodo.json,2601,666f6aca30d73d3a19d9e64757109a341b4371121fc47f2fe270203d11f0e6b8,deposit metadata,yes,
+figures/ceiling_bound_vs_observed.pdf,23708,5cdb8ba5d37cead3b3d3e3ffd3a96f13f5da38b0127c2ecc62d67b668a650f36,figure,yes,
+figures/ceiling_chronological_curve.pdf,22842,1b15a3124a6e739aab018cfbab077123d169af10b9592a6ea0c71b9cd652a83d,figure,yes,
+figures/degradation_walk.pdf,24535,e06d35bbcc8dc791c003f53edcbc1ba7f0e6bc6058650dccb1fbf7a7376c3c69,figure,yes,
+figures/paper3_component_f1.pdf,91001,17dd2c8365ff3c349e9ce37fd293f67b4f22fbc158945d13850127f7f7eddda9,figure,yes,
+figures/paper3_conceptual_architecture.pdf,42113,4dabe4db877421414aa02380ccfae8d6acd5c1bf07e5935bdc9d026e3633ebe7,figure,yes,
+figures/paper3_explanation_evidence.pdf,41142,8302ad1be5b3e9f129c1f44c0173ec92dc4d00e1b7220c196e389b6d6ff4a9ca,figure,yes,
+figures/paper3_priority_rule.pdf,40515,ce39ae67584f4659411a8e40e774fb15f485713b2be513fac476ed585ddd05f7,figure,yes,
+figures/paper3_root_cause_ranking.pdf,19350,459d35516684aab981e55809676a85846aab8aab6f25d422d0c58c273d8b6eef,figure,yes,
+figures/paper3_split_sensitivity.pdf,22700,d92b024f2e10e8981acfa5ecc26cf3ad73662a2ecbe709d412d3554b259923dd,figure,yes,
+figures/rev_evidence_graph.pdf,20607,fb4507d762fde0e61f850b211e07546a81285f1ece790f5b7111c0e9099a79b5,figure,yes,
+figures/rev_family_importance.pdf,26115,af0245f311893ff324ec24766b75f5c0cd49b182baa34e96e7af3545465a5dc9,figure,yes,
+figures/rev_priority_example.pdf,17537,3ee50a99e2fefd21f2f00943e238f1dab0f37afb0b1dc0e73feddf05406c3525,figure,yes,
+figures/rev_reliability_blocked.pdf,24118,5fbf265d6eadb55aeec2b1d11bcef140832e336890c8650d5ebdefefd7552327,figure,yes,
+manuscript/generated_calibration_table.tex,809,c63df0d6070662a9fcf68e84c363795f6954ebdaec30031ea43953132c518703,generated table,yes,
+manuscript/generated_ceiling_bound_table.tex,3033,0390fcbcb9bae8135d9e3188fa0bebf31cb88aed74432732602071633d5ac51e,generated table,yes,
+manuscript/generated_chronological_curve_table.tex,1214,9c8694d427a69600492df48890fed7fad7fd854198237c1d1685defd003f3761,generated table,yes,
+manuscript/generated_chronological_curve_table_fixed.tex,1192,313cb4a2776a6114e5cf10365d97fa784bfe15c76effbd2fb238f3eed7f07122,generated table,yes,
+manuscript/generated_comparator_table.tex,1761,8dbcac265ac9e6314c53873a5d4c7f38cfac5b0b2e063a7e626ed7ce33c797d9,generated table,yes,
+manuscript/generated_component_metrics_table.tex,733,a6aca5720c069d130cb4c3077e9fa16a479099fdc3a2395bde4c682b1a28c6f4,generated table,yes,
+manuscript/generated_confusion_table.tex,766,f9832f592e38fea42d00a6a083a72fb4f5e5b62e5b6ddbe85270e20e0589e949,generated table,yes,
+manuscript/generated_constants_table.tex,683,e5e6cde980e098a537fd38d415b71f4680ae12a5c4fa653579915ae6051e3660,generated table,yes,
+manuscript/generated_cross_auc_table.tex,871,fb2add35889f19e2ccc68a0415c8a6c3e588d72bf6898790f77c27a5ccf3b114,generated table,yes,
+manuscript/generated_degradation_walk_table.tex,2061,8349f6c386b4d8fb5221c828a884ea4cc7cc0bd75154f9185061ac2c9ef374e8,generated table,yes,
+manuscript/generated_explanation_agreement_table.tex,662,0823b5f122c1631cae0437ba974bb54bd805a8e488264f5dcb09f7b900b69d42,generated table,yes,
+manuscript/generated_leakage_robustness_table.tex,1393,c26f9fee8c4631bf598a35a3822df3a2d71b349eca578a53d3f8b5a50bf09af4,generated table,yes,
+manuscript/generated_leakage_robustness_table_fixed.tex,1350,7f1d34802c32d66c06759f8b146bc6231de3380fd9ea299ae2a0ea1489cd2b19,generated table,yes,
+manuscript/generated_priority_sensitivity_table.tex,938,f3cf63d147f03337630ad8ea9b4f8c6ff8b904c8aace24fc327d1bbb043fb5cf,generated table,yes,
+manuscript/generated_ranking_baselines_table.tex,1255,898b43614d58a4b64f67006ce9a8cce14ec53919f147531d2a5aeffa7f332773,generated table,yes,
+manuscript/generated_rev_boundcheck_table.tex,2427,1147720c2ec2245fae2fdf918c39cc20bd984efa85e192307efe5b6e4cdf2bf8,generated table,yes,
+manuscript/generated_rev_calibration_table.tex,1386,bd631dc79c7e4f6dfe04a2a43c3b065da490b227035bbc7c5db55582414eed68,generated table,yes,
+manuscript/generated_rev_channelmap_table.tex,983,75a1ba746d9212fee7676b32d893748531c59632cf5fbe301e5bd6a9117d45a6,generated table,yes,
+manuscript/generated_rev_labelmap_table.tex,1084,f25be4739f7cbafeb5991112eb1ec752437ceb236106dabdb388b9cac1659229,generated table,yes,
+manuscript/generated_rev_paired_table.tex,1425,b99ead2f8a0635e50fb7965e25f5aca5e96cc0c4077c7d612063e497d01a112d,generated table,yes,
+manuscript/generated_rev_reconcile_table.tex,1116,452c70b8915db4b367242f335c10a7c70af0c03539547c27f20fe3a649423039,generated table,yes,
+manuscript/generated_rev_sensitivity_table.tex,1358,4d5b868bd490fe54759e992808770662d5c93c0951a41ce20e2e78aed7931495,generated table,yes,
+manuscript/generated_rev_split_table.tex,1632,0ea87240af5b39469e933373c5bb536be4bc4b4fb8df5b580c38d7aa89df9249,generated table,yes,
+manuscript/generated_rev_stability_table.tex,1400,23f5d6b2537e8b8ca84272d6f436e93709267e2e7bfce3562a2df4548d79aaf2,generated table,yes,
+manuscript/main.bbl,15642,800d4de725ac258d36fb9745d073ed4fc0f66c1a5104e3e7b58881c52a396c9e,manuscript source,yes,
+manuscript/main.tex,64538,515db34ffbf19435aadabadb47ec4b9aafef4b42ea1ae0c061271ef52b6a7ead,manuscript source,yes,revised manuscript
+manuscript/references.bib,23058,1e5642678f6f0de52cb91e508574ca75a25884fb7a5087d34c5bed5b733a8fbd,manuscript source,yes,
+results/PROBE_2026-09-17_model_refitting_emitter.md,5254,ce41b39864f9aa67839b083e564a79746598d2658aa39f9e9d0cb8b87ce16527,provenance note,yes,"retirement notes for superseded results; retained, not deleted"
+results/SUPERSEDED_2026-09-12.md,5300,1040266b9cef4be972d511ae94367a4ef812ba7848a09f24f5a6f75c1e846146,provenance note,yes,"retirement notes for superseded results; retained, not deleted"
+results/SUPERSEDED_2026-09-17_degradation_walk.md,4095,21097a5ace635a7efa6bd70d789fff3483df6fd76f27e5f1c3e8939e39b836e1,provenance note,yes,"retirement notes for superseded results; retained, not deleted"
+results/_preexisting_20260917/degradation_walk.csv,202480,1574b7b868a7604ddac625cbc27f6940409c4bd68a2e2132ef2c8f24aeca1616,superseded result record,yes,kept for audit
+results/_preexisting_20260917/degradation_walk_summary.csv,19860,09bf8ab0bd73999ccffae45a712d6235e2e315ab4bff2e26e70a807cdbc6f786,superseded result record,yes,kept for audit
+results/_preexisting_20260917/generated_degradation_walk_table.tex,1933,1bafaf5d17616bd8031e56c4e80eb509edd19bcdd5f546ced38b5f333fc05777,superseded result record,yes,kept for audit
+results/ceiling_bound_check.csv,3212,30ed85c45c05f83aa301aaab7edaced9fc6f2e8c3624335ba82fb83e7db07e2a,result record,yes,
+results/ceiling_bound_check_runclustered.csv,4043,6ec17e8fd9cf95b511cdd4f02a46777e8b365b82464af5afe3e865dac396c8ab,result record,yes,
+results/chronological_curve.csv,9884,bc5b08937b92f774ecff2be5deb58c0274dbe5505cb696d9320157ca3e851fe8,result record,yes,
+results/chronological_curve_runclustered.csv,10072,aa878811aa1cace51cabd9e204d6526eb5e704cf9dde184d16463ee10d9031ef,result record,yes,
+results/comparator_classifiers.csv,3234,ae2d2e7e6763d0ddce49e1560a2bed15507fe85bdc09457be6546bc2561fff08,result record,yes,
+results/comparator_classifiers_summary.csv,1343,5df8d964fdd4c32bdf17ab3ef0f2570014c82d195b1d88fecccf460c20c72bfa,result record,yes,
+results/cross_component_auc.csv,532,216dd87774f796866716f31c15dc2d72b4995fdd1437ea6aab3052b3fd07e347,result record,yes,
+results/degradation_walk.csv,202499,cf77522a6c168d297f60d20ce89cf13e8ed61ba53ceaacb3bbda8b3de71451c9,result record,yes,
+results/degradation_walk_summary.csv,19862,f9d58565d0fbde4ba8404f31de6ec575e4764b936123b8b7ef30a4f5908ddd94,result record,yes,
+results/explanation_agreement.csv,595,7e48ab35ad5d9472261df87a082651da6b0f09720573b3c4e9373ceb87b72afb,result record,yes,
+results/revision/cache/A_hgb_17.npz,84146,a9148f7becc2971ececa6edcfc3f397911f39119cf3600592a68319da7d567b7,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_hgb_2026.npz,89261,37adb51a1ff8a847884e1610c275678cec28d8819a6d3b2193de69e0cdf47ebf,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_hgb_4242.npz,84146,a9148f7becc2971ececa6edcfc3f397911f39119cf3600592a68319da7d567b7,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_101.npz,86442,6ba8b033c271616c99ca340389200a3c056d7f3c3d7f367cac54db482bd10c4a,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_17.npz,90621,0b68fecefd0ed6ab7bf5877af593e4dbeee49aaf6f318c8a4dd1138c3965643b,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_202.npz,87007,3c93fd8981034cd572f88f1145bcb3c65264254351e08675c22befd96eada574,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_2026.npz,91192,54694b4df85c491384c09e5e1b081449fc71eeb72c3354c46fac5ac3103fceaf,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_303.npz,87018,35c643e1b91092ae6d473298b738051c30dedf782421301b2595e8078f4bf9a1,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_404.npz,86543,3ce2381b2605249d79cdaac37799eecf60a69d6904e1a69a38201f6dded577db,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_505.npz,85749,b1f6468706c98ac881b5932c19c70fcfce2ebed57b7dc43157d122a5ae8ede7e,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_606.npz,86407,6ac666d0d6095840ea91fb45ee9870675b0207f5062eaa71a340089b0773e184,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_707.npz,87041,4de48f639e3f83559ab9e67c0bbdc9c3f02e1c903c54052e41056685e6e1eea1,cached out-of-fold predictions (revision),yes,
+results/revision/cache/A_rf_808.npz,87582,0c23ecb579452b831f8f8f71590f4597f3308e9a9c0122b3d9703d5c2e4eccd0,cached out-of-fold predictions (revision),yes,
+results/revision/cache/B_rf_17.npz,90925,594b1f3dbd51393527e56c6782f62ad966278265748e18046074c747e9ccba77,cached out-of-fold predictions (revision),yes,
+results/revision/cache/B_rf_2026.npz,98837,db470b7c3f2f7ca407c379fda68418e0c8a6fe49db0fbad3ad55146d479be37f,cached out-of-fold predictions (revision),yes,
+results/revision/cache/B_rf_4242.npz,92540,4c8f7bfd4c7b12f74b568cda3622d5cf0e0b3169fd01d3d20f8dd72a41bcdd2d,cached out-of-fold predictions (revision),yes,
+results/revision/cache/C_rf_17.npz,87704,f101510522db70b1f4ad24511c32420b78a501e4f991afd3a9d66166aa9eba0b,cached out-of-fold predictions (revision),yes,
+results/revision/cache/C_rf_2026.npz,92953,d9c12d8e473abf33a90c9c2c7f2c98b4804ef4787ee42b7b396bf9346319f43d,cached out-of-fold predictions (revision),yes,
+results/revision/cache/C_rf_4242.npz,87212,4fa1163b29c81d309ba5e30581c69c3080bb60c0be52141e5184c18a9d270a08,cached out-of-fold predictions (revision),yes,
+results/revision/cache/T_rf_2026.npz,26315,a5fb1f72f82f0d642b620e1a90a763c9adf8ecf61e849312b156696fe7f2fc9b,cached out-of-fold predictions (revision),yes,
+results/revision/cache/nested_A_2026.npz,44432,d00b99db40dd213861e5e3c332d4c7f943835383a3a0b7e7f54ec6535cb93afa,cached out-of-fold predictions (revision),yes,
+results/revision/cache/shap_A_2026.npz,2819,170ab7e935484dbc18857bfc52383a476783af92ef393351a5531b287e2ea1d5,cached out-of-fold predictions (revision),yes,
+results/revision/calibration_oof.csv,2369,3a4ced75ba44d76b56e2a9c4f3bcd3a5b70e9186f7e9681ca3c21f10441b0645,result record (revision),yes,
+results/revision/explanation_stability.csv,2223,9c2849a7f57eaca728091e7f479591b5231d8eee67b04b5b7bda2a3627264088,result record (revision),yes,
+results/revision/family_occlusion_blocked.csv,681,e6fe2183d282c6322ca37f920fe6112358711bc124a467f82a2923185f3e2784,result record (revision),yes,
+results/revision/family_permutation_blocked.csv,642,31957f0f76e7d0a21c22ea05817949e3a4b4f6b76bb766fb4b99885fe4fa8871,result record (revision),yes,
+results/revision/hgb_ranking_blocked.csv,466,f8947341da7278e93dd43750182dcdf40cf846bdf664405c9d9ea7bae55e0b71,result record (revision),yes,
+results/revision/label_mapping.csv,552,7383654959adfb6c1b6e4a2a04bb38c7c63a65b35d6c9a81ea94248af35f2ad9,result record (revision),yes,
+results/revision/nested_weight_choices.csv,350,160e1c03c0d2645c2f1283fa0e6dd7fe7c5bf0897de90506d824f275faa5aa6b,result record (revision),yes,
+results/revision/occlusion_top_family_agreement.csv,148,69aad9bf960584633dec8b51c783abc6a8670e44a90af2acf523bf262ad92e06,result record (revision),yes,
+results/revision/order_preservation_fold0_10seeds.csv,1623,c153a753f8fcc6ad4bad0e833262686dad7c372676715ea9bab166a68187927f,result record (revision),yes,
+results/revision/paired_and_bound_differences.csv,1363,d90faf7dc0a558c9b37bb058e7feda7e18b11bc082fadb920eeb03288a3d58ef,result record (revision),yes,
+results/revision/priority_sensitivity_blocked.csv,913,41d276a679649dcfa50c09640335dddbf5bb39f73e1ddccd4fa727281ca6e2ae,result record (revision),yes,
+results/revision/r13_seed_reconciliation.csv,1554,5755530bc76da5f11a3113054ec188006c07c4720a1cf75125c36f7e818bbfd0,result record (revision),yes,
+results/revision/ranking_by_split.csv,4021,34d62f721e8ecf64303a718bff84c9637f477e4cf42d49e81e9fca8f32bd67b8,result record (revision),yes,
+results/revision/revision_summary.json,4861,092561f110d3e714e6d0d7e145b2e25ae2193767670ccbce662dcbe1c79809db,result record (revision),yes,
+results/revision/single_fault_subset.csv,538,70c9a34d16e578997554ff54edd4b3a25241b902c1ff0cca875415ef2305e3b7,result record (revision),yes,
+results/revision/split_B_purge.json,195,9c4f26aeb8dc4d4c99dc1681f908ca0fa25295751b3a96494fcdacdf7685ccee,result record (revision),yes,
+results/revision/split_classification.csv,979,168a80f007a716a97a420b6fa363761a0800ecff6aa3b0023c82e0cdf104b79d,result record (revision),yes,
+results/revision/split_diagnostics.csv,240,b54cb1d6ebdd6dc6e12a540908c105baa9280c1f95ae06752cfce9341f6aea1a,result record (revision),yes,
+results/revision/stable_flag_subsets.csv,470,3f0bf92e119d8f7f4c151098a535ed40285b395767cc5522333537c405d46487,result record (revision),yes,
+results/revision/weight_grid_blocked.csv,1604,e5cae4fdf10f1423a030ff4d3b3c660907a95e15d4ace27b82c9f9de3454f9ba,result record (revision),yes,

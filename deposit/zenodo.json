@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "upload_type": "software",
+    "title": "Code, result records and manuscript sources for \"Explainable Component-Fault Diagnostics and Maintenance-Priority Screening for Hydraulic-System Condition Monitoring\"",
+    "creators": [
+      {
+        "name": "Imran",
+        "affiliation": "Interdisciplinary Research Center for Intelligent Manufacturing & Robotics, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+        "orcid": "0000-0002-6197-1025"
+      }
+    ],
+    "description": "Revised release accompanying the IEEE Transactions on Instrumentation and Measurement manuscript. Contains the original pipeline (cycle-level features, multi-output random forest, grouped occlusion and permutation attributions, evidence graph, priority score, union bound, run-clustered bootstrap, degradation sweep, classifier comparators) and the analyses added in revision (run-aligned purged blocked split, condition-profile holdout, order-preservation checks of the bound, out-of-fold calibration, nested priority-weight selection, HistGradientBoosting ranking and attributions, attribution stability across folds and seeds, label-free example selection). Includes every result CSV behind a reported number, cached out-of-fold predictions, all figures, the LaTeX sources of the revised manuscript and a SHA-256 manifest. The raw UCI Condition Monitoring of Hydraulic Systems sensor streams are not redistributed; their digests are recorded in deposit/MANIFEST.csv.",
+    "access_right": "open",
+    "license": "mit",
+    "version": "1.0.0",
+    "keywords": [
+      "condition monitoring",
+      "hydraulic systems",
+      "component fault diagnosis",
+      "explainable machine learning",
+      "maintenance prioritization",
+      "leakage-controlled evaluation",
+      "clustered bootstrap",
+      "reproducibility"
+    ],
+    "related_identifiers": [
+      {
+        "relation": "references",
+        "identifier": "10.1109/I2MTC.2015.7151267",
+        "scheme": "doi",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "relation": "references",
+        "identifier": "https://archive.ics.uci.edu/ml",
+        "scheme": "url",
+        "resource_type": "dataset"
+      },
+      {
+        "relation": "isSupplementTo",
+        "identifier": "https://github.com/imranij/hydraulic-component-fault-ranking",
+        "scheme": "url",
+        "resource_type": "software"
+      }
+    ],
+    "doi": "10.5281/zenodo.23928112"
+  },
+  "_gates": {
+    "_README": "Underscore keys are local scaffolding, stripped by check_deposit_ready.py."
+  }
+}
