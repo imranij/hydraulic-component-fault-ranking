@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "Code and result records for: Explainable Component-Fault Diagnostics and Maintenance-Priority Screening for Hydraulic-System Condition Monitoring"
+authors:
+  - family-names: Imran
+    affiliation: "King Fahd University of Petroleum and Minerals"
+    orcid: "https://orcid.org/0000-0002-6197-1025"
+version: "1.0.0"
+date-released: "2026-11-03"
+doi: "DEPOSITDOI"
+license: MIT
+repository-code: "https://github.com/imranij/hydraulic-component-fault-ranking"

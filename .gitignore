@@ -1,0 +1,6 @@
+data/uci_hydraulic_raw/
+data/uci_hydraulic.zip
+__pycache__/
+*.aux
+*.log
+*.out
