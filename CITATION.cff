@@ -7,6 +7,6 @@ authors:
     orcid: "https://orcid.org/0000-0002-6197-1025"
 version: "1.0.0"
 date-released: "2026-11-03"
-doi: "DEPOSITDOI"
+doi: "10.5281/zenodo.23928112"
 license: MIT
 repository-code: "https://github.com/imranij/hydraulic-component-fault-ranking"

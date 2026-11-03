@@ -5,7 +5,7 @@ Diagnostics and Maintenance-Priority Screening for Hydraulic-System Condition Mo
 (Imran, KFUPM), submitted to *IEEE Transactions on Instrumentation and Measurement* (revised
 version, November 2026).
 
-Archived release: https://doi.org/DEPOSITDOI
+Archived release: https://doi.org/10.5281/zenodo.23928112
 
 ## What is here
 
